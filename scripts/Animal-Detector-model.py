@@ -78,7 +78,7 @@ model.compile(
 # Enhanced callbacks
 early_stopping = EarlyStopping(
     monitor='val_loss',
-    patience=5,
+    patience=100,
     restore_best_weights=True,
     min_delta=0.001
 )
